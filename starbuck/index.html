@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbuck</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+    <div class="circle"></div>
+    <div>
+        <nav>
+            <img id="logo" src="img/logo.png" alt="">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="content1">
+                <h2>It's not just coffee</h2>
+                <h2>It's <span>Starbucks</span></h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi deserunt error, 
+                    totam maxime deleniti ratione, debitis dolore amet ipsum voluptatibus fugiat dolorem 
+                    sint autem neque? Beatae optio officia molestias molestiae?
+                </p><br><br>
+                <button class="btn1">Learn More</button>
+            </div>
+
+            <div class="product-img">
+                <img src="img/img1.png" alt="" class="starbucks">
+                <div class="social">
+                    <a href="#"><img src="img/facebook.png" alt=""></a>
+                    <a href="#"><img src="img/instagram.png" alt=""></a>
+                    <a href="#"><img src="img/twitter.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="thumb">
+            <img src="img/thumb1.png" alt="" onclick="changeImg('img/img1.png');changeColor('#00704a')">
+            <img src="img/thumb2.png" alt="" onclick="changeImg('img/img2.png');changeColor('pink')">
+            <img src="img/thumb3.png" alt="" onclick="changeImg('img/img3.png');changeColor('purple')">
+        </div>
+    </div>
+   
+    
+
+    <script>
+        function changeImg(product_img){
+            document.querySelector('.starbucks').src=product_img;
+        }
+
+        function changeColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+
+
+</body>
+</html>
